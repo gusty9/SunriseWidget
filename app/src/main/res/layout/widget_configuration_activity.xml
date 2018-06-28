@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:layout_centerHorizontal="true"
+        android:inputType="numberDecimal|numberSigned"
+        android:id="@+id/latitude_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/latitude"/>
+    <EditText
+        android:layout_centerHorizontal="true"
+        android:id="@+id/longitude_edittext"
+        android:hint="@string/longitude"
+        android:inputType="numberDecimal|numberSigned"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/latitude_edittext"/>
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/longitude_edittext">
+        <Button
+            android:id="@+id/widget_okay_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="OK"/>
+        <Button
+            android:id="@+id/widget_use_current_location_button"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Use Current Location"/>
+    </LinearLayout>
+
+</RelativeLayout>
